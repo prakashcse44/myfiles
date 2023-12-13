@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style2.css" />
+    <link rel="stylesheet" href="CSS/styles2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      section {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        box-sizing: border-box;
+        background: #2c2f48;
+        flex-direction: column;
+      }
+      .cont-container {
+        max-width: 960px;
+        margin: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: #363953;
+        box-shadow: 0 0 1re hsla(0 0 0 / 16%);
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      .form-container {
+        padding: 20px;
+      }
+      .form-container h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .contact-form {
+        display: grid;
+        row-gap: 1rem;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        border: navajowhite;
+        outline: none;
+        background: #2c2f48;
+        padding: 10px;
+        font-size: 0.9rem;
+        color: #fff;
+        border-radius: 0.4rem;
+      }
+      .contact-form textarea {
+        resize: none;
+        height: 300px;
+      }
+      .contact-form .send-btn {
+        border: none;
+        outline: none;
+        background: #00dbde;
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .contact-form .send-btn:hover {
+        background: hsl(181, 100%, 44%, 0.8);
+        transition: 0.3s all linear;
+      }
+      .map iframe {
+        width: 100%;
+        height: 100%;
+      }
+      .main {
+        height: 19vh;
+        width: 100%;
+        background-color: #2c2f48;
+      }
+      #main {
+        height: 9vh;
+        width: 100%;
+        background-color: #2c2f48;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="clg.png" alt="error" />
+      <h3 class="Collage-name">
+        dr. b.r ambedkar government polytechnic collage ambota,una(h.p)
+      </h3>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="bx bx-window-close"></i>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="course.html">Courses </a>
+            <ul class="drop-down">
+              <li>
+                <a href="applied_science.html">Applied Science & Humanities</a>
+              </li>
+              <li><a href="Computer_Engg.html">Computer Engineering</a></li>
+              <li><a href="civil.html">Civil Engineering</a></li>
+              <li>
+                <a href="ECE.html"
+                  >Electronics & Commmunication <br />Engineering</a
+                >
+              </li>
+              <li><a href="archi.html">Archtectural Assistantship</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img
+          src="Images/hamburger-menu-4064899-3357998.webp"
+          id="menu-btn"
+          alt=""
+        />
+      </div>
+    </nav>
+    <div class="main"></div>
+
+    <section>
+      <div class="cont-container">
+        <div class="form-container">
+          <h3>Message Us</h3>
+          <form action="" class="contact-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email..."
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Write Message Here...."
+            ></textarea>
+            <input type="submit" value="Send" class="send-btn" />
+          </form>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.5052012989267!2d76.05975507515016!3d31.674754239499162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b1f3561f6762f%3A0xacdccad21a5e7d2!2sDr.%20B.R%20Ambedkar%20Government%20Polytechnic%20College%2CAmbota!5e0!3m2!1sen!2sin!4v1701890562657!5m2!1sen!2sin"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <div id="main"></div>
+
+    <footer>
+      <div class="footer-col">
+        <h3>Website Links</h3>
+        <li>
+          AICTE Collaboration (MOU) <br />
+          with other Organizations
+        </li>
+        <li>Grievance Portal</li>
+        <li>Startup Idea Lab</li>
+        <li>ECI Song "Main Bharat Hoon"</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Institute Features</h3>
+        <li>Library</li>
+        <li>Boys Hostel</li>
+        <li>Girls Hostel</li>
+        <li>Canteen</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick links</h3>
+        <li>AICTE</li>
+        <li>HP Tech-Board</li>
+        <li>HP Govt Website</li>
+        <li>HPDTE</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Employment sites</h3>
+        <li>HPPSC Shimla</li>
+        <li>National Emp. Services</li>
+        <li>Sarkari Naukari</li>
+        <li>HP Govt.</li>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Govt. Polytechnic College Ambota Una 2023. All rights
+          reserved.
+        </p>
+        <div class="pro-links">
+          <i class="bx bxl-facebook-square"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-youtube"></i>
+          <i class="bx bxl-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
